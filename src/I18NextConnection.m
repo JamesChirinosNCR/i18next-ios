@@ -48,10 +48,14 @@
 }
 
 - (void)start {
+#ifdef TARGET_OS_WATCH
+    
+#else
     NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
     self.connection = connection;
     [connection scheduleInRunLoop:NSRunLoop.mainRunLoop forMode:NSDefaultRunLoopMode];
     [connection start];
+#endif
 }
 
 - (void)cancel {
