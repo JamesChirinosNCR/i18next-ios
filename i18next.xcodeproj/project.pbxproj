@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1000581D19804A003F5783 /* I18Next.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20FD22181EC0B00008F1C8 /* I18Next.m */; };
+		0A1000591D19804E003F5783 /* I18NextCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFAFF85187AAE0700A5EE68 /* I18NextCache.m */; };
+		0A10005A1D198052003F5783 /* I18NextConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F020087182BAC160079D93C /* I18NextConnection.m */; };
+		0A10005B1D198055003F5783 /* I18NextLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F75F0B1182BFDAB00052192 /* I18NextLoader.m */; };
+		0A10005C1D198058003F5783 /* I18NextPlurals.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30335E1822A5C70066DA20 /* I18NextPlurals.m */; };
+		0A10005D1D19805C003F5783 /* NSObject+I18Next.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F303353182143CB0066DA20 /* NSObject+I18Next.m */; };
+		0A10005E1D19805F003F5783 /* NSString+I18Next.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F923CEF18201D8B00B59924 /* NSString+I18Next.m */; };
 		0F020088182BAC160079D93C /* I18NextConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F020087182BAC160079D93C /* I18NextConnection.m */; };
 		0F0C8167182AC555001A5CED /* I18NextLoadSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C8166182AC555001A5CED /* I18NextLoadSpec.m */; };
 		0F20FD1C181EC0B00008F1C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F20FD1B181EC0B00008F1C8 /* Foundation.framework */; };
@@ -55,6 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0A10004D1D197FE2003F5783 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F20FD16181EC0B00008F1C8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A10004F1D197FE2003F5783 /* libi18next watchOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libi18next watchOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F020086182BAC160079D93C /* I18NextConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18NextConnection.h; sourceTree = "<group>"; };
 		0F020087182BAC160079D93C /* I18NextConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18NextConnection.m; sourceTree = "<group>"; };
 		0F0C8166182AC555001A5CED /* I18NextLoadSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18NextLoadSpec.m; sourceTree = "<group>"; };
@@ -119,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A10004C1D197FE2003F5783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F20FD15181EC0B00008F1C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +181,7 @@
 			children = (
 				0F20FD18181EC0B00008F1C8 /* libi18next.a */,
 				0FD96A64181ED7230024F886 /* i18nextspec.xctest */,
+				0A10004F1D197FE2003F5783 /* libi18next watchOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,6 +278,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A10004E1D197FE2003F5783 /* i18next watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A1000571D197FE2003F5783 /* Build configuration list for PBXNativeTarget "i18next watchOS" */;
+			buildPhases = (
+				0A10004B1D197FE2003F5783 /* Sources */,
+				0A10004C1D197FE2003F5783 /* Frameworks */,
+				0A10004D1D197FE2003F5783 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "i18next watchOS";
+			productName = "i18next watchOS";
+			productReference = 0A10004F1D197FE2003F5783 /* libi18next watchOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		0F20FD17181EC0B00008F1C8 /* i18next */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F20FD3B181EC0B00008F1C8 /* Build configuration list for PBXNativeTarget "i18next" */;
@@ -299,6 +341,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = i18next;
 				TargetAttributes = {
+					0A10004E1D197FE2003F5783 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					0FD96A63181ED7230024F886 = {
 						TestTargetID = 0F20FD17181EC0B00008F1C8;
 					};
@@ -319,6 +364,7 @@
 			projectRoot = "";
 			targets = (
 				0F20FD17181EC0B00008F1C8 /* i18next */,
+				0A10004E1D197FE2003F5783 /* i18next watchOS */,
 				0FD96A63181ED7230024F886 /* i18nextspec */,
 			);
 		};
@@ -370,6 +416,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A10004B1D197FE2003F5783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A10005A1D198052003F5783 /* I18NextConnection.m in Sources */,
+				0A10005E1D19805F003F5783 /* NSString+I18Next.m in Sources */,
+				0A1000591D19804E003F5783 /* I18NextCache.m in Sources */,
+				0A10005B1D198055003F5783 /* I18NextLoader.m in Sources */,
+				0A10005D1D19805C003F5783 /* NSObject+I18Next.m in Sources */,
+				0A10005C1D198058003F5783 /* I18NextPlurals.m in Sources */,
+				0A1000581D19804A003F5783 /* I18Next.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F20FD14181EC0B00008F1C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +494,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A1000551D197FE2003F5783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		0A1000561D197FE2003F5783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		0F20FD39181EC0B00008F1C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,6 +671,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A1000571D197FE2003F5783 /* Build configuration list for PBXNativeTarget "i18next watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A1000551D197FE2003F5783 /* Debug */,
+				0A1000561D197FE2003F5783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0F20FD13181EC0B00008F1C8 /* Build configuration list for PBXProject "i18next" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
