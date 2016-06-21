@@ -48,7 +48,7 @@
 }
 
 - (void)start {
-#ifdef TARGET_OS_WATCH
+#if TARGET_OS_WATCH
     
 #else
     NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
